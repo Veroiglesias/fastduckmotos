@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Fast Duck Motos | Inicio</title>
+</head>
+
+<body class="containter">
+
+
+    <!-- Inicio de header -->
+    <header class="encabezado">
+        <a href="index.html" class="logo">
+            <img src="./img/logo-fdm.png" alt="Logo Fastduck Motos">
+            <h2 class="fdm">Fast Duck Motos</h2>
+        </a>
+        <nav>
+            <ul class="lista">
+                <li class="lista-item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="lista-item">
+                    <a href="./pages/nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="lista-item">
+                    <a href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li class="lista-item">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin header -->
+
+
+    <main>
+
+        <!-- Inicio de carousel con bootstrap -->
+        <div id="carouselExampleCaptions" class="carousel slide container mt-4">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/tres.jpeg" class="d-block w-100" alt="Service y Mantenimiento">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Service y Mantenimiento</h5>
+                        <p>Trabajamos con el respectivo manual de mantenimiento de cada moto.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel-2.png" class="d-block w-100" alt="Inyección Electrónica">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Inyección Electrónica</h5>
+                        <p>Contamos con scaners de última tecnología y excelente capacitación.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/cinco.jpeg" class="d-block w-100" alt="Restauraciones">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Restauraciones</h5>
+                        <p>Nos enfocamos en todos los detalles para que recuperes tu moto a nueva.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Seccion ubicacion -->
+        <section class="ubicacion mt-4">
+            <div class="texto-ubicacion">
+                <h2>Nuestro taller</h2>
+                <p>Escontranos en Camarones 4444 - CABA</p>
+                <h2>Horarios de atención</h2>
+                <p>Lunes a Viernes de 9 a 18 hs y Sábados de 9 a 15 hs</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.239642159603!2d-58.4963145!3d-34.6233839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c59b43e4ad%3A0x3dc75d95a562b9a!2sComuna%2010%2C%20Camarones%204444%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1703263336933!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+        <!-- Seccion Bienvenida -->
+        <section class="bienvenida mt-4">
+            <img class="imagen-bienvenida" src="./img/bienvenida.jpeg" alt="Foto taller">
+            <div class="texto-bienvenida">
+                <h3>Por que nos eligen</h3>
+                <p class="lh-base">No solo nos esforzamos por contar con la mejor mano de obra para tu moto, sino que
+                    también nos
+                    dedicamos a brindarte una atención cálida, un trabajo que inspire confianza y refleje nuestra
+                    honestidad.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--Inicio de pie de página-->
+    <footer class="mt-4">
+        <div class="pie-contenido">
+            <div class="redes">
+                <h2>Encontranos en: </h2>
+                <a class="facebook" href="https://www.facebook.com/patricio.fast.5?mibextid=ZbWKwL" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a class="instagram" href="https://www.instagram.com/fastduckmotos/?hl=es" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a class="whatsapp" href="https://wa.link/ugidwz" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <p>Copyright todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
+    </div>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
