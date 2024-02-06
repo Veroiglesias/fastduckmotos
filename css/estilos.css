@@ -50,6 +50,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 120px;
+    text-align: center;
 }
 
 .logo{
@@ -118,6 +119,7 @@ body{
     align-items: center;
     gap: 5rem;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .texto-ubicacion{
@@ -146,6 +148,7 @@ body{
     align-items: center;
     gap: 5rem;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .imagen-bienvenida{
@@ -212,5 +215,16 @@ i {
 
 
 
+/*Media query para adaptar la imagen que se distorciona para Mobile*/
 
-
+@media only screen and (max-width: 767px) {
+   .encabezado{
+        padding: 0;
+   }
+   
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
