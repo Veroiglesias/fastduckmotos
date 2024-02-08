@@ -183,12 +183,12 @@ body{
     justify-content: space-around;
 }
 
-.pie p{
+footer p{
     font-size: 1rem;
     text-align: center;
 }
 
-.pie p::before{
+footer p::before{
     content: "Fast Duck Motos  ";
     font-family: 'mostwasted';
     font-size: 3.5rem;
@@ -219,7 +219,7 @@ i {
 
 @media only screen and (max-width: 767px) {
    .encabezado{
-        padding: 0;
+        padding: 1rem;
    }
    
     .carousel-item img {
