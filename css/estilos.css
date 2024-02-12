@@ -227,4 +227,8 @@ i {
         height: auto;
         display: block;
     }
+    main{
+        margin: 1em;
+    }
+    
 }
