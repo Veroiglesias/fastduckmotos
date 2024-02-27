@@ -1,0 +1,6 @@
+
+
+.servicios{
+    @include flex-center;
+    .tracking-in-contract{-webkit-animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both}
+}

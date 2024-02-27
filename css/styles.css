@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "mostwasted";
+  src: url(../fonts/Mostwasted.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Inria Sans", sans-serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  border-bottom: 1px solid #000;
+  padding: 0 120px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.logo-img {
+  width: 100px;
+}
+.logo-texto {
+  color: #000;
+  font-family: "mostwasted";
+  font-size: 3rem;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.lista-item {
+  font-size: 1.6rem;
+}
+.lista-item-link {
+  color: #200401;
+}
+.lista-item-link:hover {
+  color: #760807;
+}
+
+.banner {
+  height: 490px;
+}
+.banner-img {
+  filter: brightness(0.5);
+}
+.banner-titulo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 600;
+}
+.banner-parrafo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.ubicacion-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.ubicacion-texto-titulo {
+  font-size: 3rem;
+}
+.ubicacion-texto-parrafo {
+  font-size: 2rem;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.nosotros-img {
+  width: 400px;
+  height: 350px;
+}
+.nosotros-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 40%;
+}
+.nosotros-texto-titulo {
+  font-size: 3rem;
+}
+.nosotros-texto-parrafo {
+  font-size: 2rem;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.2rem;
+  border-top: 2px solid #000;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.redes-titulo {
+  font-size: 2rem;
+}
+.redes-link {
+  color: #000;
+  background: #fff;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .encabezado {
+    padding: 1rem;
+  }
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  main {
+    margin: 1em;
+  }
+}
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.servicios .tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+/*# sourceMappingURL=styles.css.map */

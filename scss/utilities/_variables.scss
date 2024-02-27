@@ -1,0 +1,31 @@
+//colores
+
+$color-principal: #000;
+$color-secundario: #200401;
+$color-tres: #760807;
+$color-cuatro: #930f06;
+$color-cinco: #fff;
+
+$font-color-principal: #000;
+$font-color-secundario: #200401;
+$font-color-tres: #760807;
+$font-color-cuatro: #930f06;
+$font-color-cinco: #fff;
+
+
+//Font Sizes
+
+$font-small: 1rem;
+$font-medium: 1.6rem;
+$font-large: 2rem;
+$font-xl: 3rem;
+ 
+// Maps
+ $spacings: (
+    xsmall: 1rem,
+    small: 1.3rem,
+    medium: 1.6rem,
+    large: 2rem
+ );
+ 
+ // map-get($spacings, $medium); 

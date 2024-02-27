@@ -1,0 +1,9 @@
+@import "./utilities/variables";
+@import "./base/tipografia";
+@import "./base/reset";
+@import "./utilities/mixins";
+
+//VIEWS
+@import "./views/inicio";
+@import "./views/servicios";
+@import "./views/contactos";

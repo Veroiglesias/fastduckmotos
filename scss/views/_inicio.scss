@@ -1,0 +1,148 @@
+//Encabezado
+.encabezado {
+    @include flex(null, space-between, center, 4rem);
+    border-bottom: 1px solid #000;
+    padding: 0 120px;
+}
+
+.logo {
+    @include flex-center;
+
+    &-img {
+        @include sizes(100px, null)
+    }
+
+    &-texto {
+        color: $font-color-principal;
+        font-family: 'mostwasted';
+        font-size: $font-xl;
+    }
+}
+
+
+.lista {
+    @include flex-center;
+    text-transform: uppercase;
+    justify-content: center;
+
+    &-item {
+        font-size: $font-medium;
+
+        &-link {
+            color: $color-secundario;
+        }
+
+        &-link:hover {
+            color: $color-tres;
+        }
+    }
+}
+
+//main
+
+//estilos del carousel
+.banner {
+    @include sizes(null, 490px);
+
+    &-img {
+        filter: brightness(0.5);
+    }
+
+    &-titulo {
+        font-size: $font-xl;
+        color: $font-color-cinco;
+        font-weight: 600;
+    }
+
+    &-parrafo {
+        color: $font-color-cinco;
+        font-size: $font-large;
+        font-weight: 600;
+
+    }
+
+}
+
+
+//Ubicacion
+.ubicacion {
+    @include flex-center;
+
+    &-texto {
+        @include flex(column, center, center, 1rem);
+
+        &-titulo {
+            font-size: $font-xl;
+        }
+
+        &-parrafo {
+            font-size: $font-large;
+        }
+    }
+}
+
+//Nosotros
+.nosotros {
+    @include flex(null, center, center, 3rem);
+
+    &-img {
+        @include sizes(400px, 350px);
+    }
+
+    &-texto {
+        @include flex(column, center, center, 3rem);
+        width: 40%;
+
+        &-titulo {
+            font-size: $font-xl;
+        }
+
+        &-parrafo {
+            font-size: $font-large;
+        }
+
+
+    }
+}
+
+
+//footer
+.pie {
+    @include flex(column, space-around, center, .2rem);
+    border-top: 2px solid #000;
+}
+
+.redes {
+    @include flex-center;
+
+    &-titulo {
+        font-size: $font-large;
+    }
+
+    &-link {
+        color: $color-principal;
+        background: $font-color-cinco;
+        padding: .5rem;
+        font-size: $font-large;
+    }
+
+}
+
+
+
+//media querys
+@media only screen and (max-width: 767px) {
+    .encabezado{
+         padding: 1rem;
+    }
+    
+     .carousel-item img {
+         max-width: 100%;
+         height: auto;
+         display: block;
+     }
+     main{
+         margin: 1em;
+     }
+     
+ }
