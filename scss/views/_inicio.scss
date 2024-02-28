@@ -42,10 +42,12 @@
 
 //estilos del carousel
 .banner {
-    @include sizes(null, 490px);
+    max-width: 1200px;
+    max-height: 500px;
 
     &-img {
         filter: brightness(0.5);
+        @include sizes(490px, null);
     }
 
     &-titulo {
@@ -95,6 +97,7 @@
     &-texto {
         @include flex(column, center, center, 3rem);
         width: 40%;
+        text-align: center;
 
         &-titulo {
             font-size: $font-xl;
@@ -139,11 +142,19 @@
 
 
 @media only screen and (max-width: 767px) {
+    main{
+        padding: 1rem;
+    }
     .encabezado {
         flex-direction: column;
         padding: 1rem;      
     }
-
+    .nosotros{
+        @include sizes(100%, null);
+        &-texto{
+            width: auto;
+        }
+    }
     .carousel-item img {
         max-width: 100%;
         height: auto;

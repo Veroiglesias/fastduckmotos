@@ -2,5 +2,8 @@
 
 .servicios{
     @include flex-center;
-    .tracking-in-contract{-webkit-animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both}
+}
+
+.titulo{
+    .text-blur-out{-webkit-animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) both;animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) both}
 }

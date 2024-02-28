@@ -75,10 +75,12 @@ body {
 }
 
 .banner {
-  height: 490px;
+  max-width: 1200px;
+  max-height: 500px;
 }
 .banner-img {
   filter: brightness(0.5);
+  width: 490px;
 }
 .banner-titulo {
   font-size: 3rem;
@@ -132,6 +134,7 @@ body {
   align-items: center;
   gap: 3rem;
   width: 40%;
+  text-align: center;
 }
 .nosotros-texto-titulo {
   font-size: 3rem;
@@ -168,9 +171,18 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  main {
+    padding: 1rem;
+  }
   .encabezado {
     flex-direction: column;
     padding: 1rem;
+  }
+  .nosotros {
+    width: 100%;
+  }
+  .nosotros-texto {
+    width: auto;
   }
   .carousel-item img {
     max-width: 100%;
@@ -184,9 +196,10 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.servicios .tracking-in-contract {
-  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+
+.titulo .text-blur-out {
+  -webkit-animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 /*# sourceMappingURL=styles.css.map */
