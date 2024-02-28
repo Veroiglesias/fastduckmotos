@@ -67,6 +67,8 @@
 //Ubicacion
 .ubicacion {
     @include flex-center;
+    flex-wrap: wrap;
+    text-align: center;
 
     &-texto {
         @include flex(column, center, center, 1rem);
@@ -84,6 +86,8 @@
 //Nosotros
 .nosotros {
     @include flex(null, center, center, 3rem);
+    flex-wrap: wrap;
+    text-align: center;
 
     &-img {
         @include sizes(400px, 350px);
@@ -114,6 +118,8 @@
 
 .redes {
     @include flex-center;
+    flex-wrap: wrap;
+    text-align: center;
 
     &-titulo {
         font-size: $font-large;
@@ -131,18 +137,18 @@
 
 
 //media querys
+
+
 @media only screen and (max-width: 767px) {
-    .encabezado{
-         padding: 1rem;
+    .encabezado {
+        flex-direction: column;
+        padding: 1rem;      
     }
-    
-     .carousel-item img {
-         max-width: 100%;
-         height: auto;
-         display: block;
-     }
-     main{
-         margin: 1em;
-     }
-     
- }
+
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}

@@ -163,15 +163,17 @@ body {
 
 @media only screen and (max-width: 767px) {
   .encabezado {
-    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    margin: 1em;
   }
   .carousel-item img {
     max-width: 100%;
     height: auto;
     display: block;
-  }
-  main {
-    margin: 1em;
   }
 }
 .servicios {
