@@ -67,8 +67,7 @@
 //Ubicacion
 .ubicacion {
     @include flex-center;
-    flex-wrap: wrap;
-    text-align: center;
+    @include flex-wrap;
 
     &-texto {
         @include flex(column, center, center, 1rem);
@@ -86,8 +85,8 @@
 //Nosotros
 .nosotros {
     @include flex(null, center, center, 3rem);
-    flex-wrap: wrap;
-    text-align: center;
+    @include flex-wrap;
+
 
     &-img {
         @include sizes(400px, 350px);
@@ -118,8 +117,8 @@
 
 .redes {
     @include flex-center;
-    flex-wrap: wrap;
-    text-align: center;
+    @include flex-wrap;
+
 
     &-titulo {
         font-size: $font-large;
