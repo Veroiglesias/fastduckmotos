@@ -1,9 +1,48 @@
+//estilos seccion servicios
 
+.titulo {
+    margin: 2rem;
+    text-align: center;
 
-.servicios{
-    @include flex-center;
+    &-servicio {
+        font-size: $font-xl;
+        font-weight: 400;
+    }
+
+    &-texto {
+        font-size: $font-large;
+    }
 }
 
-.titulo{
-    .text-blur-out{-webkit-animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) both;animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) both}
+.servicios {
+    @include flex(row, center, center, 1rem);
+    @include flex-wrap;
+}
+
+.servicio {
+    margin: .5rem 0rem;
+    @include sizes(400px, 500px);
+
+    &-img {
+        @include sizes(400px, 250px);
+    }
+
+    &-titulo {
+        font-size: $font-large;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &-parrafo {
+        font-size: $font-medium;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main{
+        padding: 1rem;
+    }
+
 }
