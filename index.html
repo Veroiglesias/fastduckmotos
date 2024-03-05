@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Libreria AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- mi estilo -->
@@ -45,6 +47,9 @@
     <main>
 
         <!-- Inicio de carousel con bootstrap -->
+        <h1 class="titulo" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Taller Mecánico de Motos</h1>
         <div id="carouselExampleCaptions" class="carousel slide container mt-4">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -94,7 +99,7 @@
 
         <!-- Seccion ubicacion -->
         <section class="ubicacion mt-4">
-            <div class="ubicacion-texto">
+            <div class="ubicacion-texto" data-aos="flip-down">
                 <h2 class="ubicacion-texto-titulo">Nuestro taller</h2>
                 <p class="ubicacion-texto-parrafo">Podes encontrarnos en Camarones 4444 - CABA</p>
                 <h2 class="ubicacion-texto-titulo">Horarios de atención</h2>
@@ -109,9 +114,14 @@
 
         <!-- Seccion Nosotros -->
         <section class="nosotros mt-4">
+            <img class="nosotros-img" src="./img/mantenimiento.jpeg" alt="Taller">
+            <div class="nosotros-texto" data-aos="flip-down">
+                <h2 class="nosotros-texto-titulo">Compromiso con la calidad</h2>
+                    <p class="nosotros-texto-parrafo lh-base">Para garantizar la correcta ejecución del trabajo, capturamos imágenes detalladas que luego revisamos minuciosamente para verificar que se hayan completado todas las tareas acordadas. Te enviamos estas imágenes para que estés al tanto de cada paso realizado en el mantenimiento de tu moto. Además, al conservar todas estas imágenes, tendrás un respaldo visual para demostrar que el servicio se realizó de manera oportuna y con los productos adecuados para tu modelo en caso de que decidas venderla en el futuro.</p>
+            </div>
             <img class="nosotros-img" src="./img/bienvenida.jpeg" alt="Foto taller">
-            <div class="nosotros-texto">
-                <h3 class="nosotros-texto-titulo">Por que nos eligen</h3>
+            <div class="nosotros-texto" data-aos="flip-down">
+                <h2 class="nosotros-texto-titulo">Por que nos eligen</h2>
                 <p class="nosotros-texto-parrafo lh-base">No solo nos esforzamos por contar con la mejor mano de obra
                     para tu moto, sino que
                     también nos
@@ -149,6 +159,10 @@
     <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
     </div>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

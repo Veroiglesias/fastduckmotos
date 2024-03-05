@@ -15,7 +15,7 @@
     &-texto {
         color: $font-color-principal;
         font-family: 'mostwasted';
-        font-size: $font-xl;
+        font-size: $font-large;
     }
 }
 
@@ -26,7 +26,7 @@
     justify-content: center;
 
     &-item {
-        font-size: $font-medium;
+        font-size: $font-small;
 
         &-link {
             color: $color-secundario;
@@ -38,6 +38,10 @@
     }
 }
 
+h1{
+    font-family: 'mostwasted';
+    font-size: $font-xl;
+}
 //main
 
 //estilos del carousel
@@ -51,16 +55,15 @@
     }
 
     &-titulo {
-        font-size: $font-xl;
+        font-size: $font-large;
         color: $font-color-cinco;
         font-weight: 600;
     }
 
     &-parrafo {
         color: $font-color-cinco;
-        font-size: $font-large;
+        font-size: $font-medium;
         font-weight: 600;
-
     }
 
 }
@@ -75,11 +78,11 @@
         @include flex(column, center, center, 1rem);
 
         &-titulo {
-            font-size: $font-xl;
+            font-size: $font-large;
         }
 
         &-parrafo {
-            font-size: $font-large;
+            font-size: $font-medium;
         }
     }
 }
@@ -88,7 +91,6 @@
 .nosotros {
     @include flex(null, center, center, 3rem);
     @include flex-wrap;
-
 
     &-img {
         @include sizes(400px, 350px);
@@ -100,11 +102,11 @@
         text-align: center;
 
         &-titulo {
-            font-size: $font-xl;
+            font-size: $font-large;
         }
 
         &-parrafo {
-            font-size: $font-large;
+            font-size: $font-medium;
         }
 
 
@@ -129,7 +131,6 @@
 
     &-link {
         color: $color-principal;
-        background: $font-color-cinco;
         padding: .5rem;
         font-size: $font-large;
     }
@@ -142,19 +143,23 @@
 
 
 @media only screen and (max-width: 767px) {
-    main{
+    main {
         padding: 1rem;
     }
+
     .encabezado {
         flex-direction: column;
-        padding: 1rem;      
+        padding: 1rem;
     }
-    .nosotros{
+
+    .nosotros {
         @include sizes(100%, null);
-        &-texto{
+
+        &-texto {
             width: auto;
         }
     }
+
     .carousel-item img {
         max-width: 100%;
         height: auto;

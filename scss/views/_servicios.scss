@@ -22,7 +22,7 @@
 .servicio {
     margin: .5rem 0rem;
     @include sizes(400px, 500px);
-
+        
     &-img {
         @include sizes(400px, 250px);
     }

@@ -21,7 +21,7 @@ ul {
 a {
   text-decoration: none;
   color: #000;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 img {
@@ -72,6 +72,11 @@ body {
 }
 .lista-item-link:hover {
   color: #760807;
+}
+
+h1 {
+  font-family: "mostwasted";
+  font-size: 4rem;
 }
 
 .banner {
@@ -161,13 +166,12 @@ body {
   align-items: center;
 }
 .redes-titulo {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .redes-link {
   color: #000;
-  background: #fff;
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -195,11 +199,11 @@ body {
   text-align: center;
 }
 .titulo-servicio {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 .titulo-texto {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .servicios {
@@ -222,12 +226,12 @@ body {
   height: 250px;
 }
 .servicio-titulo {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding: 1rem;
 }
 .servicio-parrafo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
 }
