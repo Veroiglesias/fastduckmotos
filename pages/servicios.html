@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- bootstrap-->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--Libreria AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- mi estilo -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/servicios.css">
@@ -41,9 +43,7 @@
     </header>
     <!-- Fin header -->
     <main>
-        <div class="titulo" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+        <div class="titulo" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h1 class="titulo_servicio">Servicios</h1>
             <p class="titulo_texto">Conoce las soluciones que tenemos para vos y tu moto</p>
             <p class="titulo_texto"></p>
@@ -53,16 +53,16 @@
                 <img class="servicio-img" src="../img/dos.jpeg" alt="Mantenimiento">
                 <h2 class="servicio-titulo">Service Basico</h2>
                 <p class="servicio-parrafo">Realizamos las tareas básicas de mantenimiento.</p>
-                    <ul>
-                        <li>Cambio de aceite y filtro de aceite</li>
-                        <li>Nivel y estado del liquido refrigerante</li>
-                        <li>Tensión y lubricación de cadena</li>
-                        <li>Revisión de frenos</li>
-                        <li>Control de luces</li>
-                        <li>Presión de ruedas</li>
-                        <li>Liquido de frenos</li>
-                        <li>Control y ajuste visual general</li>
-                    </ul>
+                <ul>
+                    <li>Cambio de aceite y filtro de aceite</li>
+                    <li>Nivel y estado del liquido refrigerante</li>
+                    <li>Tensión y lubricación de cadena</li>
+                    <li>Revisión de frenos</li>
+                    <li>Control de luces</li>
+                    <li>Presión de ruedas</li>
+                    <li>Liquido de frenos</li>
+                    <li>Control y ajuste visual general</li>
+                </ul>
             </article>
 
             <article class="servicio">
@@ -107,7 +107,8 @@
             <article class="servicio">
                 <img class="servicio-img" src="../img/mantenimiento.jpeg" alt="Blabla">
                 <h2 class="servicio-titulo">Presupuestos</h2>
-                <p class="servicio-parrafo">Tuviste accidente de transito? Traenos tu moto o contactate por Whats App para revisarla.</p>
+                <p class="servicio-parrafo">Tuviste accidente de transito? Traenos tu moto o contactate por Whats App
+                    para revisarla.</p>
                 <ul>
                     <li>Presupuesto para seguros</li>
                 </ul>
@@ -115,7 +116,8 @@
             <article class="servicio">
                 <img class="servicio-img" src="../img/scaner.jpeg" alt="Blabla">
                 <h2 class="servicio-titulo">Inyeccion Electronica</h2>
-                <p class="servicio-parrafo">Contamos con scaner de ultima tecnologia para controlar el estado de tu moto.</p>
+                <p class="servicio-parrafo">Contamos con scaner de ultima tecnologia para controlar el estado de tu
+                    moto.</p>
                 <ul>
                     <li>Deteccion de errores del CDI</li>
                     <li>Control de componentes</li>
@@ -158,6 +160,10 @@
     <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
     </div>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

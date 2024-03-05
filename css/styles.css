@@ -51,7 +51,7 @@ body {
   width: 100px;
 }
 .logo-texto {
-  color: #000;
+  color: #3c74a5;
   font-family: "mostwasted";
   font-size: 3rem;
 }
@@ -68,15 +68,15 @@ body {
   font-size: 1.6rem;
 }
 .lista-item-link {
-  color: #200401;
+  color: #000;
 }
 .lista-item-link:hover {
-  color: #760807;
+  color: #3c74a5;
 }
 
 h1 {
   font-family: "mostwasted";
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .banner {
@@ -145,7 +145,7 @@ h1 {
   font-size: 3rem;
 }
 .nosotros-texto-parrafo {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .pie {
@@ -187,6 +187,7 @@ h1 {
   }
   .nosotros-texto {
     width: auto;
+    text-align: center;
   }
   .carousel-item img {
     max-width: 100%;

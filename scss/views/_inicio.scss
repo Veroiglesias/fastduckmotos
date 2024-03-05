@@ -1,7 +1,7 @@
 //Encabezado
 .encabezado {
     @include flex(null, space-between, center, 4rem);
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $color-principal;
     padding: 0 120px;
 }
 
@@ -13,7 +13,7 @@
     }
 
     &-texto {
-        color: $font-color-principal;
+        color: $color-tres;
         font-family: 'mostwasted';
         font-size: $font-large;
     }
@@ -29,7 +29,7 @@
         font-size: $font-small;
 
         &-link {
-            color: $color-secundario;
+            color: $color-principal;
         }
 
         &-link:hover {
@@ -40,8 +40,9 @@
 
 h1{
     font-family: 'mostwasted';
-    font-size: $font-xl;
+    font-size: 6rem;
 }
+
 //main
 
 //estilos del carousel
@@ -56,12 +57,12 @@ h1{
 
     &-titulo {
         font-size: $font-large;
-        color: $font-color-cinco;
+        color: $color-cinco;
         font-weight: 600;
     }
 
     &-parrafo {
-        color: $font-color-cinco;
+        color: $color-cinco;
         font-size: $font-medium;
         font-weight: 600;
     }
@@ -106,10 +107,8 @@ h1{
         }
 
         &-parrafo {
-            font-size: $font-medium;
+            font-size: $font-small;
         }
-
-
     }
 }
 
@@ -157,6 +156,7 @@ h1{
 
         &-texto {
             width: auto;
+            text-align: center;
         }
     }
 
