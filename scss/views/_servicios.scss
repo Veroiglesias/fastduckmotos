@@ -6,43 +6,66 @@
 
     &-servicio {
         font-size: $font-xl;
-        font-weight: 400;
     }
 
     &-texto {
         font-size: $font-large;
+        color: $color-letra;
     }
-}
-
-.servicios {
-    @include flex(row, center, center, 1rem);
-    @include flex-wrap;
 }
 
 .servicio {
-    margin: .5rem 0rem;
-    @include sizes(400px, 500px);
-        
+    @include flex(center, center, center, 3rem);
+    @include flex-wrap;
+    margin: 20px;   
+
+    &-contenedor {
+        @include sizes(350px, 550px);
+        border-radius: 6px;
+        overflow: hidden;
+        background: $color-secundario;
+        box-shadow: 0px 1px 10px $color-tres;
+        transition: all 400ms ease-out;
+    }
+
     &-img {
-        @include sizes(400px, 250px);
+        @include sizes(350px, 250px);
+        filter: brightness(0.7);
+        object-fit: cover;
+    }
+
+    &-texto {
+        padding: 30px;   
     }
 
     &-titulo {
-        font-size: $font-large;
+        margin-bottom: 15px;
+        font-size: $font-medium ;
         text-align: center;
-        padding: 1rem;
+        color: $color-letra;
     }
 
-    &-parrafo {
-        font-size: $font-medium;
-        text-align: center;
-        padding: 1rem;
+    &-items {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color-letra;
+        line-height: 1.8;
+        list-style: disc;
     }
 }
 
+.servicio-contenedor:hover {
+    box-shadow: 5px 5px 20px $color-secundario;
+    transform: translateY(-3%);
+}
+
 @media only screen and (max-width: 767px) {
-    main{
+    body {
         padding: 1rem;
+    }
+
+    .servicio-contenedor {
+        margin: 15px;
     }
 
 }

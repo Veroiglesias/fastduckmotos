@@ -4,10 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fuente de Google-->
+    <!-- Keywords y description-->
+    <meta name="keywords"
+        content="taller, taller de moto, moto, service, mantenimiento, kawasaki, yamaha, ktm, bajaj, honda, bmw, restauracion, inyeccion, carburacion, soldar, cf moto">
+    <meta name="description"
+        content="Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos y demas">
+    <!--Protocolo Open Graph-->
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="Fast Duck Motos - Taller Mecanico">
+    <meta property="og:url" content="https://github.com/Veroiglesias/preentregable-2">
+    <meta property="og:img" content="https://veroiglesias.github.io/preentregable-2/img/tres.jpeg">
+    <meta property="og:description"
+        content="Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos y demas">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/logo-fdm.ico" type="image/x-icon">
+    <!-- Fuente de Google Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Montserrat:ital,wght@0,100;1,100&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Libreria AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap-->
@@ -19,8 +35,6 @@
 </head>
 
 <body class="containter">
-
-
     <!-- Inicio de header -->
     <header class="encabezado">
         <a href="index.html" class="logo">
@@ -30,26 +44,23 @@
         <nav>
             <ul class="lista">
                 <li class="lista-item">
-                    <a class="lista-item-link" href="index.html">Inicio</a>
+                    <a class="lista-item-link" href="index.html">INICIO</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./pages/servicios.html">Servicios</a>
+                    <a class="lista-item-link" href="./pages/servicios.html">SERVICIOS</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./pages/contacto.html">Contacto</a>
+                    <a class="lista-item-link" href="./pages/galeria.html">GALERIA</a>
+                </li>
+                <li class="lista-item">
+                    <a class="lista-item-link" href="./pages/contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Fin header -->
-
-
     <main>
-
         <!-- Inicio de carousel con bootstrap -->
-        <h1 class="titulo" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">Taller Mecánico de Motos</h1>
         <div id="carouselExampleCaptions" class="carousel slide container mt-4">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -60,15 +71,15 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active banner ">
-                    <img src="./img/tres.jpeg" class=" banner-img d-block w-100" alt="Service y Mantenimiento">
+                <div class="carousel-item active banner">
+                    <img src="./img/b-1.jpg" class="banner-img d-block w-100" alt="Service y Mantenimiento">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="banner-titulo">Service y Mantenimiento</h5>
                         <p class="banner-parrafo">Trabajamos con el respectivo manual de mantenimiento de cada moto.</p>
                     </div>
                 </div>
                 <div class="carousel-item banner">
-                    <img src="./img/taller1.jpg" class="banner-img d-block w-100" alt="Inyección Electrónica">
+                    <img src="./img/b-2.jpeg" class="banner-img d-block w-100" alt="Inyección Electrónica">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="banner-titulo">Inyección Electrónica</h5>
                         <p class="banner-parrafo">Contamos con scaners de última tecnología y excelente capacitación.
@@ -76,7 +87,7 @@
                     </div>
                 </div>
                 <div class="carousel-item banner">
-                    <img src="./img/restauracion.jpeg" class="banner-img d-block w-100" alt="Restauraciones">
+                    <img src="./img/b-3.jpeg" class="banner-img d-block w-100" alt="Restauraciones">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="banner-titulo">Restauraciones</h5>
                         <p class="banner-parrafo">Nos enfocamos en todos los detalles para que recuperes tu moto a
@@ -96,50 +107,48 @@
             </button>
         </div>
 
-
-        <!-- Seccion ubicacion -->
-        <section class="ubicacion mt-4">
-            <div class="ubicacion-texto" data-aos="flip-down">
-                <h2 class="ubicacion-texto-titulo">Ubicacion</h2>
-                <p class="ubicacion-texto-parrafo">Encontrarnos en: <strong><em>Camarones 4444 - CABA.</em></strong></p>
-                <h2 class="ubicacion-texto-titulo">Horarios</h2>
-                <p class="ubicacion-texto-parrafo">Lunes a Viernes de <em>9 a 18hs</em> y Sábados de <em>9 a 15hs.</em></p>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.239642159603!2d-58.4963145!3d-34.6233839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c59b43e4ad%3A0x3dc75d95a562b9a!2sComuna%2010%2C%20Camarones%204444%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1703263336933!5m2!1ses-419!2sar"
-                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
-        </section>
-
-
-        <!-- Seccion Nosotros -->
-        <section class="nosotros mt-4">
-            <img class="nosotros-img" src="./img/mantenimiento.jpeg" alt="Taller" data-aos="fade-right">
-            <div class="nosotros-texto" data-aos="flip-down">
-                <h2 class="nosotros-texto-titulo">Compromiso con la calidad</h2>
-                    <p class="nosotros-texto-parrafo lh-base">Para garantizar la correcta ejecución del trabajo, capturamos imágenes detalladas que luego revisamos para verificar que se hayan completado todas las tareas acordadas. <br> Te enviamos estas imágenes para que estés al tanto de cada paso realizado en el mantenimiento de tu moto. <br> Además, al conservar todas estas imágenes, tendrás un respaldo visual para demostrar que el servicio se realizó de manera oportuna y con los productos adecuados para tu modelo en caso de que decidas venderla en el futuro.</p>
-            </div>
-            <div class="nosotros-texto" data-aos="flip-down">
-                <h2 class="nosotros-texto-titulo">Por qué nos eligen</h2>
-                <p class="nosotros-texto-parrafo lh-base">No solo nos esforzamos por contar con la mejor mano de obra
-                    para tu moto, sino que
-                    también nos
-                    dedicamos a brindarte una atención cálida, un trabajo que inspire confianza y refleje nuestra
-                    honestidad.</p>
-            </div>
-            <img class="nosotros-img" src="./img/bienvenida.jpeg" alt="Foto taller" data-aos="fade-left">
-        </section>
     </main>
-
-
+    <!-- Seccion ubicacion -->
+    <section class="ubicacion mt-4">
+        <div class="ubicacion-texto" data-aos="flip-down">
+            <h2 class="ubicacion-texto-titulo">Ubicación</h2>
+            <p class="ubicacion-texto-parrafo">Encontrarnos en: <strong><em>Camarones 4444 - CABA.</em></strong></p>
+            <p class="ubicacion-texto-titulo">Horarios</p>
+            <p class="ubicacion-texto-parrafo">Lunes a Viernes de <em>9 a 18hs</em> y Sábados de <em>9 a 15hs.</em>
+            </p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.239642159603!2d-58.4963145!3d-34.6233839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c59b43e4ad%3A0x3dc75d95a562b9a!2sComuna%2010%2C%20Camarones%204444%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1703263336933!5m2!1ses-419!2sar"
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" data-aos="fade-left"></iframe>
+    </section>
+    
+    <!-- Seccion Nosotros -->
+    <section class="nosotros mt-4">
+        <img class="nosotros-img" src="./img/nosotros-2.jpeg" alt="Entrada al taller" data-aos="fade-right">
+        <div class="nosotros-texto" data-aos="flip-down">
+            <h3 class="nosotros-texto-titulo">Compromiso con la calidad</h3>
+            <p class="nosotros-texto-parrafo lh-base">Para garantizar la correcta ejecución del trabajo, capturamos
+                imágenes detalladas que luego revisamos para verificar que se hayan completado todas las tareas
+                acordadas. <br> Te enviamos estas imágenes para que estés al tanto de cada paso realizado en el
+                mantenimiento de tu moto. <br> Al conservarlas, tendrás un respaldo visual para demostrar que el servicio se realizó de manera oportuna y con los productos adecuados para tu
+                modelo en caso de que decidas venderla en el futuro.</p>
+        </div>
+        <div class="nosotros-texto" data-aos="flip-down">
+            <h3 class="nosotros-texto-titulo">Por qué nos eligen</h3>
+            <p class="nosotros-texto-parrafo lh-base">No solo nos esforzamos por contar con la mejor mano de obra
+                para tu moto, sino que también nos dedicamos a brindarte una atención cálida, un trabajo que inspire confianza y refleje nuestra
+                honestidad a través de imagenes y videos capturados en el momento.</p>
+        </div>
+        <img class="nosotros-img" src="./img/nosotros.jpeg" alt="Foto taller" data-aos="fade-left">
+    </section>
 
     <!--Inicio de pie de página-->
     <footer class="mt-4">
         <div class="pie">
             <div class="redes mt-2">
                 <h2 class="redes-titulo">Encontranos en: </h2>
-                <a class="redes-link" href="https://www.facebook.com/patricio.fast.5?mibextid=ZbWKwL"
-                    target="_blank">
+                <a class="redes-link" href="https://www.facebook.com/patricio.fast.5?mibextid=ZbWKwL" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
@@ -152,8 +161,8 @@
                 </a>
             </div>
             <p class="logo-texto"><strong>Fast Duck Motos</strong></p>
-            <p>Copyright todos los derechos reservados</p>
         </div>
+        <p>Copyright todos los derechos reservados</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
@@ -162,7 +171,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
-
 </html>

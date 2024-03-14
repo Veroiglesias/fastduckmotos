@@ -4,14 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fuente de Google-->
+    <!-- Keywords y description-->
+    <meta name="keywords"
+        content="taller, taller de moto, moto, service, mantenimiento, kawasaki, yamaha, ktm, bajaj, honda, bmw, restauracion, inyeccion, carburacion, soldar, cf moto">
+    <meta name="description"
+        content="Servicios | Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos, iyeccion electronica, restauraciones">
+    <!--Protocolo Open Graph-->
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="Fast Duck Motos | Taller Mecanico">
+    <meta property="og:url" content="https://github.com/Veroiglesias/preentregable-2">
+    <meta property="og:img" content="https://veroiglesias.github.io/preentregable-2/img/tres.jpeg">
+    <meta property="og:description"
+        content="Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos y demas">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/logo-fdm.ico" type="image/x-icon">
+    <!-- Fuente de Google Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Montserrat:ital,wght@0,100;1,100&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Libreria AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- mi estilo -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/servicios.css">
@@ -20,7 +36,6 @@
 </head>
 
 <body class="containter">
-
     <!-- Inicio de header -->
     <header class="encabezado">
         <a href="../index.html" class="logo">
@@ -30,60 +45,66 @@
         <nav>
             <ul class="lista">
                 <li class="lista-item">
-                    <a class="lista-item-link" href="../index.html">Inicio</a>
+                    <a class="lista-item-link" href="../index.html">INICIO</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./servicios.html">Servicios</a>
+                    <a class="lista-item-link" href="./servicios.html">SERVICIOS</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./contacto.html">Contacto</a>
+                    <a class="lista-item-link" href="./galeria.html">GALERIA</a>
+                </li>
+                <li class="lista-item">
+                    <a class="lista-item-link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Fin header -->
-    <main>
-        <div class="titulo" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-            <h1 class="titulo_servicio">Servicios</h1>
-            <p class="titulo_texto">Conoce las soluciones que tenemos para vos y tu moto</p>
-            <p class="titulo_texto"></p>
-        </div>
-        <section class="servicios">
-            <article class="servicio">
-                <img class="servicio-img" src="../img/dos.jpeg" alt="Mantenimiento">
-                <h2 class="servicio-titulo">Service Basico</h2>
-                <p class="servicio-parrafo">Realizamos las tareas básicas de mantenimiento.</p>
-                <ul>
+
+    <!-- Servicios -->
+    <div class="titulo">
+        <h1 class="titulo_servicio" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Servicios</h1>
+        <p class="titulo_texto" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Conoce las soluciones que tenemos para vos y tu moto</p>
+    </div>
+
+    <section class="servicio">
+        <article class="servicio-contenedor">
+            <figure>
+                <img class="servicio-img" src="../img/basico.jpeg" alt="Mantenimiento basico imagen">
+            </figure>
+            <div class="servicio-texto">
+                <h2 class="servicio-titulo">Service Básico</h2>
+                <ul class="servicio-items">
                     <li>Cambio de aceite y filtro de aceite</li>
-                    <li>Nivel y estado del liquido refrigerante</li>
+                    <li>Nivel y estado del líquido refrigerante</li>
                     <li>Tensión y lubricación de cadena</li>
                     <li>Revisión de frenos</li>
                     <li>Control de luces</li>
                     <li>Presión de ruedas</li>
-                    <li>Liquido de frenos</li>
+                    <li>Líquido de frenos</li>
                     <li>Control y ajuste visual general</li>
                 </ul>
-            </article>
-
-            <article class="servicio">
-                <img class="servicio-img" src="../img/taller1.jpg" alt="Mantenimiento">
+            </div>
+        </article>
+        <article class="servicio-contenedor">
+            <img class="servicio-img" src="../img/completo.jpeg" alt="Mantenimiento imagen">
+            <div class="servicio-texto">
                 <h2 class="servicio-titulo">Service Completo</h2>
-                <p class="servicio-parrafo">Además de las tareas del servicio básico, también le agregamos:</p>
-                <ul>
+                <ul class="servicio-items">
                     <li>Suspención y juego de dirección</li>
                     <li>Engrase de ejes de rueda y partes móviles</li>
                     <li>Lubricación de cables de acelerador y embrague</li>
                     <li>Chequeo eléctrico general y escaneo TEXA</li>
-                    <li>Filtro de aire y bujia</li>
+                    <li>Filtro de aire y bujía</li>
                     <li>Lavado completo</li>
                 </ul>
-            </article>
-
-            <article class="servicio">
-                <img class="servicio-img" src="../img/restauraciones.jpeg" alt="Restauraciones">
+            </div>
+        </article>
+        <article class="servicio-contenedor">
+            <img class="servicio-img" src="../img/restauracion.jpeg" alt="Restauracion imagen">
+            <div class="servicio-texto">
                 <h2 class="servicio-titulo">Restauraciones</h2>
-                <p class="servicio-parrafo">Tu moto, tu estilo.</p>
-                <ul>
+                <ul class="servicio-items">
                     <li>Modificaciones, personalización y adaptaciones</li>
                     <li>Soldadura</li>
                     <li>Motores</li>
@@ -91,50 +112,53 @@
                     <li>Pintura y ploteo</li>
                     <li>Restauración de plasticos y chásis</li>
                 </ul>
-            </article>
-            <article class="servicio">
-                <img class="servicio-img" src="../img/lavado.jpeg" alt="Blabla">
+            </div>
+        </article>
+        <article class="servicio-contenedor">
+            <img class="servicio-img" src="../img/lavado.jpeg" alt="Lavado imagen">
+            <div class="servicio-texto">
                 <h2 class="servicio-titulo">Lavados</h2>
-                <p class="servicio-parrafo">También podés mantener tu moto limpia con Fastduck!</p>
-                <ul>
-                    <li>Lavados con desengrasante de primera calidad</li>
-                    <li>Enjuague</li>
-                    <li>Secado</li>
-                    <li>Cera</li>
-                    <li>Silicona</li>
+                <ul class="servicio-items">
+                    <li>Desengrasantes de primera calidad</li>
+                    <li>Limpieza de cadena</li>
+                    <li>Detalles</li>
+                    <li>Enjuague con compresor</li>
+                    <li>Secado por aire</li>
+                    <li>Tratamiento de silicona</li>
+                    <li>Revividor de pintura</li>
+                    <li>Revividor de plasticos</li>
                 </ul>
-            </article>
-            <article class="servicio">
-                <img class="servicio-img" src="../img/mantenimiento.jpeg" alt="Blabla">
+            </div>
+        </article>
+        <article class="servicio-contenedor">
+            <img class="servicio-img" src="../img/presupuesto.jpeg" alt="Presupuesto imagen">
+            <div class="servicio-texto">
                 <h2 class="servicio-titulo">Presupuestos</h2>
-                <p class="servicio-parrafo">Tuviste accidente de transito? Traenos tu moto o contactate por Whats App
-                    para revisarla.</p>
-                <ul>
+                <ul class="servicio-items">
                     <li>Presupuesto para seguros</li>
+                    <li>Diagnósticos</li>
+                    <li>Reparaciones</li>
+                    <li>Preparación para VTV</li>
+                   <li>Venta</li>
                 </ul>
-            </article>
-            <article class="servicio">
-                <img class="servicio-img" src="../img/scaner.jpeg" alt="Blabla">
-                <h2 class="servicio-titulo">Inyeccion Electronica</h2>
-                <p class="servicio-parrafo">Contamos con scaner de ultima tecnologia para controlar el estado de tu
-                    moto.</p>
-                <ul>
-                    <li>Deteccion de errores del CDI</li>
+            </div>
+        </article>
+        <article class="servicio-contenedor">
+            <img class="servicio-img" src="../img/scaner.jpeg" alt="Escaber imagen">
+            <div class="servicio-texto">
+                <h2 class="servicio-titulo">Inyección Electrónica</h2>
+                <ul class="servicio-items">
+                    <li>Detección de errores de la ECU con scaner TEXA</li>
                     <li>Control de componentes</li>
                     <li>Limpieza de inyectores</li>
                     <li>Calibración</li>
+                    <li>Control de sensores y actuadores</li>
+                    <li>Potenciación</li>
                 </ul>
-            </article>
+            </div>
+        </article>
 
-        </section>
-    </main>
-
-
-
-
-
-
-
+    </section>
     <!--Inicio de pie de página-->
     <footer class="mt-4">
         <div class="pie">
@@ -163,7 +187,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>

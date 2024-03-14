@@ -1,35 +1,36 @@
 //Encabezado
 .encabezado {
     @include flex(null, space-between, center, 4rem);
-    border-bottom: 1px solid $color-principal;
+    border-bottom: 0.2px solid $color-letra;
     padding: 0 120px;
+    background-color: $color-principal
 }
 
 .logo {
     @include flex-center;
 
     &-img {
-        @include sizes(100px, null)
+        @include sizes(110px, null);
     }
 
     &-texto {
-        color: $color-tres;
+        color: $color-letra;
         font-family: 'mostwasted';
-        font-size: $font-large;
+        font-size: $font-medium;
     }
 }
 
 
 .lista {
     @include flex-center;
-    text-transform: uppercase;
     justify-content: center;
 
     &-item {
         font-size: $font-small;
+        font-weight: 500;
 
         &-link {
-            color: $color-principal;
+            color: $color-letra;
         }
 
         &-link:hover {
@@ -40,31 +41,33 @@
 
 h1{
     font-family: 'mostwasted';
-    font-size: 6rem;
+    font-size: $font-large;
+    text-transform: uppercase;
+    color: $color-letra;
 }
 
 //main
 
 //estilos del carousel
 .banner {
-    max-width: 1200px;
-    max-height: 500px;
+    max-width: 1300px;
+    max-height: 700px;
 
     &-img {
-        filter: brightness(0.5);
-        @include sizes(490px, null);
+        filter: brightness(0.6);
+        
     }
 
     &-titulo {
         font-size: $font-large;
-        color: $color-cinco;
-        font-weight: 600;
+        color: $color-letra;
+        font-weight: 300;
     }
 
     &-parrafo {
-        color: $color-cinco;
+        color: $color-letra;
         font-size: $font-medium;
-        font-weight: 600;
+        font-weight: 300;
     }
 
 }
@@ -72,18 +75,23 @@ h1{
 
 //Ubicacion
 .ubicacion {
+    padding: 2rem;
     @include flex-center;
     @include flex-wrap;
+    background-color: $color-secundario;
 
     &-texto {
         @include flex(column, center, center, 1rem);
+        margin-right: 3rem;
 
         &-titulo {
-            font-size: $font-large;
+            font-size: $font-medium;
+            color: $color-letra;
         }
 
         &-parrafo {
-            font-size: $font-medium;
+            font-size: $font-small;
+            color: $color-letra
         }
     }
 }
@@ -101,35 +109,38 @@ h1{
         @include flex(column, center, center, 3rem);
         width: 40%;
         text-align: center;
+        color: $color-letra;
 
         &-titulo {
             font-size: $font-large;
         }
 
-        &-parrafo {
+        &-parrafo { 
             font-size: $font-small;
         }
     }
 }
 
-
 //footer
 .pie {
     @include flex(column, space-around, center, .2rem);
-    border-top: 2px solid #000;
+    border-top: 1px solid $color-letra;
 }
-
+.pie p{
+    color: $color-letra;
+}
 .redes {
     @include flex-center;
     @include flex-wrap;
 
 
     &-titulo {
-        font-size: $font-large;
+        font-size: $font-medium;
+        color: $color-letra;
     }
 
     &-link {
-        color: $color-principal;
+        color: $color-letra;
         padding: .5rem;
         font-size: $font-large;
     }
@@ -142,7 +153,7 @@ h1{
 
 
 @media only screen and (max-width: 767px) {
-    main {
+    body {
         padding: 1rem;
     }
 

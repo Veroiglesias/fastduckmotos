@@ -4,10 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fuente de Google-->
+    <!-- Keywords y description-->
+    <meta name="keywords"
+        content="taller, taller de moto, moto, service, mantenimiento, kawasaki, yamaha, ktm, bajaj, honda, bmw, restauracion, inyeccion, carburacion, soldar, cf moto, contacto">
+    <meta name="description"
+        content="Contactanos | Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos y demas">
+    <!--Protocolo Open Graph-->
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="Fast Duck Motos - Taller Mecanico">
+    <meta property="og:url" content="https://github.com/Veroiglesias/preentregable-2">
+    <meta property="og:img" content="https://veroiglesias.github.io/preentregable-2/img/tres.jpeg">
+    <meta property="og:description"
+        content="Taller mecánico de motos en CABA, mantenimiento para tu moto, service completos y demas">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/logo-fdm.ico" type="image/x-icon">
+    <!-- Fuente de Google Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Montserrat:ital,wght@0,100;1,100&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Libreria AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap-->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- mi estilo -->
@@ -27,64 +45,58 @@
         <nav>
             <ul class="lista">
                 <li class="lista-item">
-                    <a class="lista-item-link" href="../index.html">Inicio</a>
+                    <a class="lista-item-link" href="../index.html">INICIO</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./servicios.html">Servicios</a>
+                    <a class="lista-item-link" href="./servicios.html">SERVICIOS</a>
                 </li>
                 <li class="lista-item">
-                    <a class="lista-item-link" href="./contacto.html">Contacto</a>
+                    <a class="lista-item-link" href="./galeria.html">GALERIA</a>
+                </li>
+                <li class="lista-item">
+                    <a class="lista-item-link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Fin header -->
+    <section class="mt-4 mb-4">
+        <h1 class="titulo" data-aos= "fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Contactanos</h1>
+        <div class="redes mt-2">
+            <a class="redes-link" href="https://www.facebook.com/patricio.fast.5?mibextid=ZbWKwL" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
 
-    <main class="container mt-4 mb-4">
-        <section class="mt-4 mb-4">
-            <h1 class="text-center">Contactanos</h1>
-            <div class="redes">
-                <a class="facebook" href="https://www.facebook.com/patricio.fast.5?mibextid=ZbWKwL" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+            <a class="redes-link" href="https://www.instagram.com/fastduckmotos/?hl=es" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-                <a class="instagram" href="https://www.instagram.com/fastduckmotos/?hl=es" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+            <a class="redes-link" href="https://wa.link/ugidwz" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
 
-                <a class="whatsapp" href="https://wa.link/ugidwz" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
+    <section class="formulario-contenedor mt-4 w-100">
+        <div class="formulario mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-light fs-2">Nombre</label>
+            <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Tu nombre">
+            <label for="exampleFormControlInput1" class="form-label text-light fs-2">Apellido</label>
+            <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Tu apellido">
+            <label for="exampleFormControlInput1" class="form-label text-light fs-2">Correo electrónico</label>
+            <input type="email" class="form-control mb-3" id="exampleFormControlInput1"
+                placeholder="nombre@ejemplo.com">
+            <label for="exampleFormControlTextarea1" class="form-label text-light fs-2">Dejanos tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Escribe aquí"></textarea>
+        </div>
+        <form class="row g-3 needs-validation mt-4" novalidate>
+            <div class="d-grid gap-2 col-12">
+                <button class="btn btn-primary fs-2" type="button">Enviar mensaje</button>
             </div>
-        </section>
+        </form>
 
-        <section class="mt-4 w-100">
-            <div class="formulario mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Tu nombre">
-                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="Tu apellido">
-                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control mb-3" id="exampleFormControlInput1"
-                    placeholder="nombre@ejemplo.com">
-                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    placeholder="Escribe aquí"></textarea>
-            </div>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="d-grid gap-2 col-12">
-                    <button class="btn btn-primary" type="button">Enviar mensaje</button>
-                </div>
-            </form>
-
-        </section>
-
-    </main>
-
-
-
-
-
+    </section>
 
     <!--Inicio de pie de página-->
     <footer class="mt-4">
@@ -109,7 +121,14 @@
     </footer>
     <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
     </div>
+    
+    <script src="https://kit.fontawesome.com/2edb952761.js" crossorigin="anonymous"></script>
+    </div>
     <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

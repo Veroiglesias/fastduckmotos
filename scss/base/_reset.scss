@@ -22,5 +22,9 @@ img {
     width: 100%;
 }
 body{
-    font-family: 'Inria Sans', sans-serif;
+    font-family:  'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    background-color: $color-principal;
 }
