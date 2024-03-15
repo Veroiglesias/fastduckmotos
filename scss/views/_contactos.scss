@@ -1,3 +1,11 @@
+
+
+
 .formulario-contenedor{
     padding: 0 120px;
+}
+@media only screen and (max-width: 767px) {
+    .formulario-contenedor{
+        padding: 0 20px;
+    }
 }

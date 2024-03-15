@@ -1,9 +1,10 @@
 //Encabezado
 .encabezado {
     @include flex(null, space-between, center, 4rem);
+    @include sizes(100%, 80px);
     border-bottom: 0.2px solid $color-letra;
     padding: 0 120px;
-    background-color: $color-principal
+    background-color: $color-principal; 
 }
 
 .logo {
@@ -24,9 +25,10 @@
 .lista {
     @include flex-center;
     justify-content: center;
+    width: auto;
 
     &-item {
-        font-size: $font-small;
+        font-size: 9px;
         font-weight: 500;
 
         &-link {
@@ -50,7 +52,7 @@ h1{
 
 //estilos del carousel
 .banner {
-    max-width: 1300px;
+    max-width: 1200px;
     max-height: 700px;
 
     &-img {
@@ -153,15 +155,20 @@ h1{
 
 
 @media only screen and (max-width: 767px) {
-    body {
-        padding: 1rem;
-    }
 
-    .encabezado {
+    body{
+        width: 100%;
+        margin: 3rem;
+    }
+    .logo-texto{
+        flex-wrap: wrap;      
+    }
+    
+    .encabezado{
         flex-direction: column;
-        padding: 1rem;
+        height: auto;
+        width: auto;
     }
-
     .nosotros {
         @include sizes(100%, null);
 

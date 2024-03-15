@@ -51,23 +51,9 @@
 }
 
 @media (max-width:767px) {
-
-  .galeria-contenedor {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .galeria-item:nth-child(3) {
-    grid-column-start: span 2;
-  }
-
-  .galeria-item:nth-child(4) {
-    grid-column-start: span 4;
-  }
-  .galeria-item:nth-child(5) {
-    grid-column-start: span 3;  
-  }
-  .galeria-item:nth-child(9) {
-    grid-column-start: span 3;
+  
+  .galeria-contenedor{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

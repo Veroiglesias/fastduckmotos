@@ -29,6 +29,7 @@ img {
 }
 
 body {
+  margin: 1rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -41,6 +42,8 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
+  width: 100%;
+  height: 80px;
   border-bottom: 0.2px solid #fff;
   padding: 0 120px;
   background-color: #000;
@@ -67,9 +70,10 @@ body {
   align-items: center;
   gap: 2rem;
   justify-content: center;
+  width: auto;
 }
 .lista-item {
-  font-size: 1.6rem;
+  font-size: 9px;
   font-weight: 500;
 }
 .lista-item-link {
@@ -87,7 +91,7 @@ h1 {
 }
 
 .banner {
-  max-width: 1300px;
+  max-width: 1200px;
   max-height: 700px;
 }
 .banner-img {
@@ -193,11 +197,16 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding: 1rem;
+    width: 100%;
+    margin: 3rem;
+  }
+  .logo-texto {
+    flex-wrap: wrap;
   }
   .encabezado {
     flex-direction: column;
-    padding: 1rem;
+    height: auto;
+    width: auto;
   }
   .nosotros {
     width: 100%;
@@ -216,6 +225,11 @@ h1 {
   padding: 0 120px;
 }
 
+@media only screen and (max-width: 767px) {
+  .formulario-contenedor {
+    padding: 0 20px;
+  }
+}
 .titulo {
   margin: 2rem;
   text-align: center;
@@ -328,19 +342,7 @@ h1 {
 
 @media (max-width: 767px) {
   .galeria-contenedor {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .galeria-item:nth-child(3) {
-    grid-column-start: span 2;
-  }
-  .galeria-item:nth-child(4) {
-    grid-column-start: span 4;
-  }
-  .galeria-item:nth-child(5) {
-    grid-column-start: span 3;
-  }
-  .galeria-item:nth-child(9) {
-    grid-column-start: span 3;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
