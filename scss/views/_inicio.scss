@@ -1,17 +1,18 @@
 //Encabezado
 .encabezado {
     @include flex(null, space-between, center, 4rem);
-    @include sizes(null, 80px);
+    @include sizes(auto, auto);
     border-bottom: 0.2px solid $color-letra;
     padding: 0 120px;
-    background-color: $color-principal; 
+    background-color: $color-principal;
 }
 
 .logo {
     @include flex-center;
+    @include flex-wrap;
 
     &-img {
-        @include sizes(110px, null);
+        @include sizes(110px, auto);
     }
 
     &-texto {
@@ -21,11 +22,9 @@
     }
 }
 
-
 .lista {
     @include flex-center;
-    justify-content: center;
-    width: auto;
+    @include flex-wrap;
 
     &-item {
         font-size: 9px;
@@ -41,12 +40,14 @@
     }
 }
 
-h1{
+h1 {
     font-family: 'mostwasted';
     font-size: $font-large;
     text-transform: uppercase;
     color: $color-letra;
 }
+
+//main
 
 //estilos del carousel
 .banner {
@@ -55,7 +56,7 @@ h1{
 
     &-img {
         filter: brightness(0.6);
-        
+
     }
 
     &-titulo {
@@ -71,6 +72,7 @@ h1{
     }
 
 }
+
 
 //Ubicacion
 .ubicacion {
@@ -101,7 +103,7 @@ h1{
     @include flex-wrap;
 
     &-img {
-        @include sizes(400px, 350px);
+        @include sizes(400px, 250px);
     }
 
     &-texto {
@@ -114,7 +116,7 @@ h1{
             font-size: $font-large;
         }
 
-        &-parrafo { 
+        &-parrafo {
             font-size: $font-small;
         }
     }
@@ -125,9 +127,11 @@ h1{
     @include flex(column, space-around, center, .2rem);
     border-top: 1px solid $color-letra;
 }
-.pie p{
+
+.pie p {
     color: $color-letra;
 }
+
 .redes {
     @include flex-center;
     @include flex-wrap;
@@ -149,22 +153,27 @@ h1{
 
 
 //media querys
-
-
 @media only screen and (max-width: 767px) {
 
-    body{
+    body {
         margin: 3rem;
+        overflow-x: hidden;
     }
-    
-    .encabezado{
-        width: fit-content;
-    }
-    .nosotros {
-        flex-direction: column;
 
-        &-texto {
-            text-align: center;
-        }
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 0 12px;
+       
     }
+    .ubicacion-texto {
+        text-align: center;
+    }
+
+    .nosotros-texto {
+        width: auto;
+        text-align: center;
+    }
+
 }

@@ -42,7 +42,8 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  height: 80px;
+  width: auto;
+  height: auto;
   border-bottom: 0.2px solid #fff;
   padding: 0 120px;
   background-color: #000;
@@ -53,9 +54,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .logo-img {
   width: 110px;
+  height: auto;
 }
 .logo-texto {
   color: #fff;
@@ -68,8 +72,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  justify-content: center;
-  width: auto;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .lista-item {
   font-size: 9px;
@@ -144,7 +148,7 @@ h1 {
 }
 .nosotros-img {
   width: 400px;
-  height: 350px;
+  height: 250px;
 }
 .nosotros-texto {
   display: flex;
@@ -197,14 +201,19 @@ h1 {
 @media only screen and (max-width: 767px) {
   body {
     margin: 3rem;
+    overflow-x: hidden;
   }
   .encabezado {
-    width: fit-content;
-  }
-  .nosotros {
     flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 0 12px;
+  }
+  .ubicacion-texto {
+    text-align: center;
   }
   .nosotros-texto {
+    width: auto;
     text-align: center;
   }
 }
