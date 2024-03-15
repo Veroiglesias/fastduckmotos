@@ -1,7 +1,7 @@
 //Encabezado
 .encabezado {
     @include flex(null, space-between, center, 4rem);
-    @include sizes(100%, 80px);
+    @include sizes(null, 80px);
     border-bottom: 0.2px solid $color-letra;
     padding: 0 120px;
     background-color: $color-principal; 
@@ -48,8 +48,6 @@ h1{
     color: $color-letra;
 }
 
-//main
-
 //estilos del carousel
 .banner {
     max-width: 1200px;
@@ -73,7 +71,6 @@ h1{
     }
 
 }
-
 
 //Ubicacion
 .ubicacion {
@@ -157,31 +154,17 @@ h1{
 @media only screen and (max-width: 767px) {
 
     body{
-        width: 100%;
         margin: 3rem;
-    }
-    .logo-texto{
-        flex-wrap: wrap;      
     }
     
     .encabezado{
-        flex-direction: column;
-        height: auto;
-        width: auto;
+        width: fit-content;
     }
     .nosotros {
-        @include sizes(100%, null);
+        flex-direction: column;
 
         &-texto {
-            width: auto;
             text-align: center;
         }
     }
-
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
 }
