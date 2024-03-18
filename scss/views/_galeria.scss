@@ -50,12 +50,26 @@
   }
 }
 
-@media (max-width:767px) {
-  
-  .galeria-contenedor{
-    grid-template-columns: repeat(1, 1fr);
-    margin: 2rem;
+@media (max-width: 767px) {
 
+  body {
+    margin: 1 rem;
+  }
+
+  .galeria-nombre {
+    margin: 2rem;
+  }
+
+  .galeria-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  .galeria-item:nth-child(3) {
+    grid-column-start: span 2;
+  }
+
+  .galeria-item:nth-child(5) {
+    grid-row-start: span 1;
   }
 }
-

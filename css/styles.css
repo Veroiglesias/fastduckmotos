@@ -64,7 +64,7 @@ body {
 .logo-texto {
   color: #fff;
   font-family: "mostwasted";
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .lista {
@@ -91,6 +91,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
 .banner {
@@ -145,10 +146,11 @@ h1 {
   gap: 3rem;
   flex-wrap: wrap;
   align-items: center;
+  padding: 2rem;
 }
 .nosotros-img {
-  width: 400px;
-  height: 250px;
+  width: 450px;
+  height: 300px;
 }
 .nosotros-texto {
   display: flex;
@@ -159,6 +161,8 @@ h1 {
   width: 40%;
   text-align: center;
   color: #fff;
+  padding: 3rem;
+  line-height: 1.8;
 }
 .nosotros-texto-titulo {
   font-size: 3rem;
@@ -200,14 +204,12 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   body {
-    margin: 3rem;
+    margin: 2rem;
     overflow-x: hidden;
   }
   .encabezado {
     flex-direction: column;
-    height: auto;
-    width: auto;
-    padding: 0 12px;
+    padding: 0;
   }
   .ubicacion-texto {
     text-align: center;
@@ -290,7 +292,10 @@ h1 {
     padding: 1rem;
   }
   .servicio-contenedor {
-    margin: 15px;
+    margin: 1rem;
+  }
+  .servicio-imagen {
+    object-fit: cover;
   }
 }
 .galeria-nombre {
@@ -337,9 +342,21 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .galeria-contenedor {
-    grid-template-columns: repeat(1, 1fr);
+  body {
+    margin: 1 rem;
+  }
+  .galeria-nombre {
     margin: 2rem;
+  }
+  .galeria-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .galeria-item:nth-child(3) {
+    grid-column-start: span 2;
+  }
+  .galeria-item:nth-child(5) {
+    grid-row-start: span 1;
   }
 }
 
